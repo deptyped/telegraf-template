@@ -1,0 +1,23 @@
+{ 
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2017",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": "src",
+        "paths": {
+            "@bot/*": [
+                "*"
+            ]
+        },
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "incremental": true
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
