@@ -29,6 +29,7 @@ dist/
 .DS_Store
 
 .env
+sessions.json
 
 # TypeScript incremental compilation cache
 *.tsbuildinfo
