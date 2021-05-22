@@ -1,0 +1,3 @@
+start: Hello from @${username}
+language_select: Please, select the language
+language_selected: You have chosen English

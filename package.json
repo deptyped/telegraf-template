@@ -22,23 +22,26 @@
     "boilerplate"
   ],
   "license": "MIT",
-  "private": false,
+  "private": true,
   "main": "dist/app.js",
   "scripts": {
     "start": "node dist/app.js",
     "start:dev": "npm run build && concurrently -i -k -n \"bot,build\" -c \"blue.bold,yellow.bold\" \"npm run watch:js\" \"npm run watch:ts -- --preserveWatchOutput\"",
-    "build": "tsc --skipLibCheck",
+    "build": "tsc",
     "clean": "rimraf dist tsconfig.tsbuildinfo",
-    "watch:ts": "tsc -w --skipLibCheck",
+    "watch:ts": "tsc -w",
     "watch:js": "nodemon dist/app.js --watch dist --watch .env",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@edjopato/telegraf-i18n": "^0.2.2",
     "dotenv": "^9.0.2",
+    "iso-639-1": "^2.1.9",
     "module-alias": "^2.2.2",
     "pino": "^6.11.3",
     "pino-pretty": "^4.8.0",
     "telegraf": "^4.3.0",
+    "telegraf-callback-data": "^0.2.2",
     "telegraf-session-local": "^2.1.0",
     "telegraf-update-logger": "^1.5.0",
     "zod": "^3.0.2"

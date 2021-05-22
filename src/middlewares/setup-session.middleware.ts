@@ -6,5 +6,5 @@ declare module "telegraf" {
   }
 }
 
-export default () =>
+export const setupSessionMiddleware = () =>
   new LocalSession({ database: "sessions.json" }).middleware();

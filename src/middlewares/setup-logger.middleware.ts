@@ -9,7 +9,7 @@ declare module "telegraf" {
   }
 }
 
-export default () => (ctx: Context, next) => {
+export const setupLoggerMiddleware = () => (ctx: Context, next) => {
   ctx.logger = logger.child({
     requestId: randomUUID(),
   });

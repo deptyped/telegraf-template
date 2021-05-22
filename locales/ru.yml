@@ -1,0 +1,3 @@
+start: Привет от @${username}
+language_select: Пожалуйста, выберите язык
+language_selected: Вы выбрали русский язык

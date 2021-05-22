@@ -1,7 +1,7 @@
 { 
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es2017",
+        "target": "es2020",
         "moduleResolution": "node",
         "sourceMap": true,
         "outDir": "dist",
@@ -15,7 +15,8 @@
         "experimentalDecorators": true,
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
-        "incremental": true
+        "incremental": true,
+        "skipLibCheck": true
     },
     "include": [
         "src/**/*"

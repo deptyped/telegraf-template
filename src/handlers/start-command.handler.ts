@@ -1,5 +1,9 @@
 import { Context } from "telegraf";
 
-export default async (ctx: Context) => {
-  await ctx.reply(`Hello from @${ctx.botInfo.username}`);
+export const startCommandHandler = async (ctx: Context) => {
+  await ctx.reply(
+    ctx.i18n.t("start", {
+      username: ctx.botInfo.username,
+    })
+  );
 };
